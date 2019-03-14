@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+	var mangSo =  ["h",5,8,"h",1,0,0,8,1,6];
+	var nhap = prompt("nhập số muốn kiểm tra");
+	var dem = 0;
+	function kiemTra(mangSo) {
+	    for(var i = 0; i < mangSo.length; i++){
+	        if(mangSo[i] == nhap){
+	            dem += 1;
+	        }
+	    }
+	    if (dem <= 0 ) {
+	    	return (-1);
+	    }else
+	        return dem;
+	}
+	alert(kiemTra(mangSo));
+	</script>
+</body>
+</html>

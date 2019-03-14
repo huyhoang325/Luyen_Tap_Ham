@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+	</title>
+	<link rel="stylesheet" href="">
+</head>
+	<input type="button" value="Tìm" onclick="timSao()">
+	<p id="Kq"></p>
+<body>
+	<script>
+	function timSao(){
+		var value = prompt("nhập tên");
+		var mangTen = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+		var mangSao = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+		for(var i = 0; i < mangTen.length; i++){
+		    if(value == mangTen[i]){
+		    	document.getElementById("Kq").innerHTML = "Tên: " + mangTen[i] + "<br> Ứng với sao: " + mangSao[i];	
+		    	break;
+		    }
+		    else
+		    	document.getElementById("Kq").innerHTML = "Không thấy ngôi sao này";
+		}
+	}
+	</script>
+</body>
+</html>
+
